@@ -1,0 +1,29 @@
+Projeto de Estrutura de Dados
+Sistema de Atendimento com Fila de Prioridade
+Autores: Edson Elias
+Instituição: IFPE – Campus Jaboatão
+Disciplina: Estrutura de Dados
+Data: Julho de 2025
+
+1. Descrição do Problema Resolvido
+O projeto tem como objetivo simular uma fila de atendimento que respeita critérios de prioridade baseados no Estatuto da Pessoa com Deficiência (Lei nº 13.146/2015), além de outros grupos prioritários, como idosos, gestantes e lactantes. Essa solução foi desenvolvida para representar, em ambiente computacional, a lógica de atendimento preferencial em serviços públicos e privados, garantindo uma ordem de atendimento justa e conforme a legislação vigente.
+2. Justificativa da Escolha do Tema
+A escolha se baseia no artigo 9º do Estatuto da Pessoa com Deficiência, que garante o direito ao atendimento prioritário para pessoas com deficiência. Além disso, outros grupos também recebem atendimento preferencial conforme legislações complementares.
+"A pessoa com deficiência tem direito a receber atendimento prioritário, sobretudo com a finalidade de: I - proteção e socorro em quaisquer circunstâncias; II - atendimento em todos os serviços de instituições públicas e privadas [...]"
+— Lei nº 13.146/2015, Art. 9º
+Com isso, o projeto foi pensado como uma aplicação prática e socialmente relevante, que une programação com responsabilidade social.
+3. Aplicação das Estruturas de Dados
+- Heap (Fila de Prioridade com heapq): Utilizado para organizar as pessoas conforme sua prioridade (menor número = maior prioridade).
+- Tupla: Cada pessoa é inserida no heap com uma tupla no formato (prioridade, ordem_chegada, objeto).
+- Classe Pessoa: Define os atributos como nome, idade, tipo de deficiência, condição especial e data/hora de chegada.
+4. Desafios Enfrentados e Soluções Encontradas
+- Desempate entre pessoas com a mesma prioridade: Solução com contador incremental.
+- Cálculo automático da prioridade: Solução com função dentro da classe Pessoa.
+- Representação da fila: Solução com função que imprime a fila ordenada por prioridade.
+5. Instruções para Executar o Projeto
+Pré-requisitos:
+- Ter o Python 3 instalado no computador.
+Passo a passo:
+1. Salve o código como fila_prioridade.py
+2. Execute pelo terminal com: python fila_prioridade.py
+3. O programa já possui dados de exemplo, podendo ser adaptado para entrada interativa.
